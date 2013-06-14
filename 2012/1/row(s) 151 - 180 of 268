@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:htmldb="http://htmldb.oracle.com">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+                <meta http-equiv="refresh" content="1800">
+		<title>ORM Permit Decisions v1.0 - Final Individual Permits</title>
+		<meta http-equiv="content-type" content="text/html; charset=us-ascii"/>
+		<meta name="Author" content="NDB" />
+		<meta name="Description" content="" />
+		<meta name="Keywords" content="" />
+		
+		<link rel="icon" href="/pi/orm_public/images/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="/i/css/apex_4_1.css" type="text/css" />
+		<!--[if IE]><link rel="stylesheet" href="/i/css/apex_ie_4_1.css" type="text/css" /><![endif]-->
+		<script type="text/javascript">var apex_img_dir = "/i/", htmldb_Img_Dir = apex_img_dir;</script>
+		
+<link rel="stylesheet" href="/i/css/apex_4_1.min.css" type="text/css" />
+<!--[if IE]><link rel="stylesheet" href="/i/css/apex_ie_4_1.css" type="text/css" /><![endif]-->
+<link rel="stylesheet" href="/i/libraries/jquery-ui/1.8.14/themes/base/jquery-ui.min.css" type="text/css" />
+<script type="text/javascript">var apex_img_dir = "/i/", htmldb_Img_Dir = apex_img_dir;</script><script src="/i/javascript/apex_4_1.min.js" type="text/javascript"></script>
+<style> html {visibility:hidden;} </style><script type="text/javascript">apex.security.framebreaker("D");</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Pragma" content="no-cache" /><meta http-equiv="Expires" content="-1" /><meta http-equiv="Cache-Control" content="no-cache" />
+		<link rel="stylesheet" type="text/css" href="/pi/orm_public/css/usace.all.min.css"/>
+		<script type="text/javascript" src="/pi/orm_public/js/all.min.js"></script>
+		<script src="/i/javascript/apex_4_1.js" type="text/javascript"></script>
+		<script src="/i/javascript/apex_legacy_4_1.js" type="text/javascript"></script>
+		<script src="/i/javascript/apex_widget_4_1.js" type="text/javascript"></script>
+		<script src="/i/javascript/apex_dynamic_actions_4_1.js" type="text/javascript"></script>
+		<!-- Ben commented wasn't working <script language="javascript" type="text/javascript" src="/pi/orm_public/js/AnyChart.js"></script> -->
+	</head>
+	<body class="internal wide" ><form action="wwv_flow.accept" method="post" name="wwv_flow" id="wwvFlowForm">
+<input type="hidden" name="p_flow_id" value="340" id="pFlowId" /><input type="hidden" name="p_flow_step_id" value="2" id="pFlowStepId" /><input type="hidden" name="p_instance" value="1191477976891101" id="pInstance" /><input type="hidden" name="p_page_submission_id" value="998744962831801" id="pPageSubmissionId" /><input type="hidden" name="p_request" value="" id="pRequest" />
+		<div id="topContainer">
+			<a name="top"></a>
+			<div id="header">
+				<div id="logo"><a href="f?p=340:1:1191477976891101" title="Home"><img src="/pi/orm_public/images/hq-usace-header-image-001.png" alt="Click Here to Go Home" /> <!-- LOGO --></a></div>
+			</div>
+			<div id="topBar"></div>
+		</div>
+		<div id="usaceLogo"><a href="f?p=340:1:1191477976891101" title="Home"><img src="/pi/orm_public/images/usace_logo.png"/></a></div>
+		<div id="clientName"><span>US Army Corps of Engineers</span></div>
+		<div id="projectName"><span>ORM Permit Decisions</span></div>
+		<div id="projectMotto"><a href="f?p=340:1:1191477976891101" title="Home"><span>BUILDING STRONG<font style="font-size: 12px;">&reg;</font></span></a></div>
+
+		
+
+		<div id="bottomContainer">
+			<div id="wrapper" class="clearfix">
+				<ul id="mainNav" class="clearfix">
+					<li class="spacer"></li>
+					<li><a href="javascript:apex.submit('T_HOME');" title="Home">Home</a></li><li><a href="javascript:apex.submit('T_PERMITS');" title="Final&nbsp;IP" class="current">Final&nbsp;IP</a></li><li><a href="javascript:apex.submit('T_PENDINGAPPLICATIONS');" title="Pending&nbsp;IP">Pending&nbsp;IP</a></li><li><a href="javascript:apex.submit('T_EMERGENCYPERMITS');" title="Emergency">Emergency</a></li><li><a href="javascript:apex.submit('T_WRDA');" title="WRDA">WRDA</a></li><li><a href="javascript:apex.submit('T_DEEPWATERHORIZONSETTLEMENTS');" title="Deepwater&nbsp;Horizon&nbsp;Settlements">Deepwater&nbsp;Horizon&nbsp;Settlements</a></li>
+				</ul>
+				<div class="breadcrumbRegion"></div>
+				<ul id="secondaryNav"></ul>
+				<div id="message" title="System Message" style="display:none;">
+					
+					
+					
+				</div>
+				<div id="content">
+					<div id="contentPadding">
+      					
+      					<script language="JavaScript" type="text/javascript">  
+
+function setItem(pItem,pValue){  
+  $('#'+pItem).val(pValue);
+  var get = new htmldb_Get(null,340,'APPLICATION_PROCESS=AJAX.returnNothing()',0);  
+  get.add(pItem,pValue);  
+  gReturn = get.get();  
+}  
+
+function getItem(pItem){  
+  var get = new htmldb_Get(null,340,'APPLICATION_PROCESS=AJAX.returnItem()',0);  
+  get.add('RETURNITEM',pItem);  
+  gReturn = get.get();  
+  $('#'+pItem).val(gReturn);
+  return gReturn;
+}
+
+var app_item = {};
+app_item['APP_OWNER'] = '';
+app_item['APP_SCHEMA'] = 'ORM2';
+app_item['APP_CSSDIR'] = '/pi/orm_public/css/';
+app_item['APP_IMAGEDIR'] = '/pi/orm_public/images/';
+app_item['APP_DIR'] = '/pi/orm_public/';
+app_item['APP_JSDIR'] = '/pi/orm_public/js/';
+app_item['ICONSDIR'] = '/pi/orm_public/images/icons/';
+app_item['ICONS_LARGE_DIR'] = '/pi/orm_public/images/icons/crystal_clear/256x256/';
+app_item['ICONS_SMALL_DIR'] = '/pi/orm_public/images/icons/crystal_clear/16x16/';
+
+var isNS4 = (navigator.appName=="Netscape")?1:0;
+
+function confirmDelete(delUrl,msg) {
+if (confirm(msg)) {
+       document.location = delUrl;
+   }
+}
+
+</script><input type="hidden" name="p_arg_names" value="194046530101199977" /><input type="hidden" name="p_t01" id="P0_PAGE_NAME" value="Final Individual Permits"><div class="region" id="R194009640108482260" >
+  <div class="title" id="R194009640108482260Title">Final Individual Permits</div>
+  <div>
+    <div class="body clearfix" id="R194009640108482260Body" style="padding: 1px 8px 1px 8px"><table id="apex_layout_194009640108482260" border="0" class="formlayout" summary="" role="presentation" datatable=0 ><tr><td nowrap="nowrap" align="right"><label for="P0_ORG" tabindex="999"><span class="optional">Filter by District</span></label></td>
+<td  colspan="1" rowspan="1" align="left"><input type="hidden" name="p_arg_names" value="193991155316048509" /><select name="p_t02" id="P0_ORG" size="1" onchange="apex.submit('P0_ORG');" class="selectlist"><option value="2" selected="selected" >- All Districts -</option>
+<option value="1">----MVD-Mississippi Valley Division</option>
+<option value="11">------MVM-Memphis District</option>
+<option value="12">------MVN-New Orleans District</option>
+<option value="13">------MVS-St. Louis District</option>
+<option value="14">------MVK-Vicksburg District</option>
+<option value="15">------MVR-Rock Island District</option>
+<option value="16">------MVP-St. Paul District</option>
+<option value="3">----NAD-North Atlantic Division</option>
+<option value="31">------NAB-Baltimore District</option>
+<option value="33">------NAN-New York District</option>
+<option value="34">------NAO-Norfolk District</option>
+<option value="35">------NAP-Philadelphia District</option>
+<option value="36">------NAE-New England District</option>
+<option value="4">----NWD-Northwestern Division</option>
+<option value="42">------NWP-Portland District</option>
+<option value="47">------NWS-Seattle District</option>
+<option value="44">------NWW-Walla Walla District</option>
+<option value="45">------NWK-Kansas City District</option>
+<option value="46">------NWO-Omaha District</option>
+<option value="5">----LRD-Great Lakes and Ohio River Division</option>
+<option value="51">------LRH-Huntington District</option>
+<option value="52">------LRL-Louisville District</option>
+<option value="53">------LRN-Nashville District</option>
+<option value="54">------LRP-Pittsburgh District</option>
+<option value="55">------LRB-Buffalo District</option>
+<option value="56">------LRC-Chicago District</option>
+<option value="57">------LRE-Detroit District</option>
+<option value="6">----POD-Pacific Ocean Division</option>
+<option value="63">------POH-Honolulu District</option>
+<option value="64">------POA-Alaska District</option>
+<option value="7">----SAD-South Atlantic Division</option>
+<option value="72">------SAC-Charleston District</option>
+<option value="71">------SAJ-Jacksonville District</option>
+<option value="75">------SAM-Mobile District</option>
+<option value="76">------SAS-Savannah District</option>
+<option value="77">------SAW-Wilmington District</option>
+<option value="8">----SPD-South Pacific Division</option>
+<option value="81">------SPL-Los Angeles District</option>
+<option value="82">------SPK-Sacramento District</option>
+<option value="83">------SPN-San Francisco District</option>
+<option value="84">------SPA-Albuquerque District</option>
+<option value="9">----SWD-Southwestern Division</option>
+<option value="92">------SWF-Fort Worth District</option>
+<option value="93">------SWG-Galveston District</option>
+<option value="94">------SWL-Little Rock District</option>
+<option value="95">------SWT-Tulsa District</option>
+</select></td><td nowrap="nowrap" align="right"><label for="P0_YEAR" tabindex="999"><span class="optional">Year:</span></label></td>
+<td  colspan="1" rowspan="1" align="left"><input type="hidden" name="p_arg_names" value="193990950373048508" /><select name="p_t03" id="P0_YEAR" size="1" onchange="apex.submit('P0_YEAR');" class="selectlist"><option value="2013">2013</option>
+<option value="2012" selected="selected" >2012</option>
+<option value="2011">2011</option>
+<option value="2010">2010</option>
+<option value="2009">2009</option>
+<option value="2008">2008</option>
+</select></td><td nowrap="nowrap" align="right"><label for="P0_MONTH" tabindex="999"><span class="optional">Month:</span></label></td>
+<td  colspan="1" rowspan="1" align="left"><input type="hidden" name="p_arg_names" value="193990743885048503" /><select name="p_t04" id="P0_MONTH" size="1" onchange="apex.submit('P0_MONTH');" class="selectlist"><option value="1" selected="selected" >January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+</select></td></tr>
+</table>
+</div>
+    <div class="buttons" id="R194009640108482260Buttons" ></div>
+  </div>
+</div><div class="region" id="R193752150861201154" >
+  <div>
+    <div class="body clearfix" id="R193752150861201154Body"><table id="topPagination_R193752150861201154"><tr><td></td></tr></table>
+<div cellpadding="0" border="0" cellspacing="0" summary=""  id="report_R193752150861201154" class="ui-widget ui-widget-content ui-corner-all ui-grid" style="display: inline-block; width: auto;">
+<table cellpadding="0" border="0" cellspacing="0" summary="" class="content" style="border-collapse: collapse; width: 100%;">
+<tr><tr class="ui-widget-content jqgrow ui-row-ltr"><th class="ui-state-default ui-grid-header"  id="DISTRICT" style="white-space: nowrap; border-collapse: collapse;"><div class="rpt-sort"><a  href="f?p=340:2:1191477976891101:fsp_sort_4::RP&amp;fsp_region_id=193752150861201154"  title="Sort by this column">District</a></div></th><th class="ui-state-default ui-grid-header"  id="DA_NUMBER" style="white-space: nowrap; border-collapse: collapse;"><div class="rpt-sort"><a  href="f?p=340:2:1191477976891101:fsp_sort_5::RP&amp;fsp_region_id=193752150861201154"  title="Sort by this column">DA Number</a></div></th><th class="ui-state-default ui-grid-header"  id="APPLICANT" style="white-space: nowrap; border-collapse: collapse;"><div class="rpt-sort"><a  href="f?p=340:2:1191477976891101:fsp_sort_6::RP&amp;fsp_region_id=193752150861201154"  title="Sort by this column">Applicant</a></div></th><th class="ui-state-default ui-grid-header"  id="PROJECT_NAME" style="white-space: nowrap; border-collapse: collapse;"><div class="rpt-sort"><a  href="f?p=340:2:1191477976891101:fsp_sort_7::RP&amp;fsp_region_id=193752150861201154"  title="Sort by this column">Project Name</a></div></th><th class="ui-state-default ui-grid-header"  id="PERMIT_TYPE" style="white-space: nowrap; border-collapse: collapse;"><div class="rpt-sort"><a  href="f?p=340:2:1191477976891101:fsp_sort_8::RP&amp;fsp_region_id=193752150861201154"  title="Sort by this column">Permit Type</a></div></th><th class="ui-state-default ui-grid-header"  id="PUBLIC_NOTICE_DATE" style="white-space: nowrap; border-collapse: collapse;"><div class="rpt-sort"><a  href="f?p=340:2:1191477976891101:fsp_sort_9_desc::RP&amp;fsp_region_id=193752150861201154"  title="Sort by this column">Public Notice Date</a><img align="absmiddle" src="/i/arrow_up_gray_dark.gif" width="13" height="12" alt="" alt="Sort by this column" /></div></th><th class="ui-state-default ui-grid-header"  id="ACTION_TAKEN" style="white-space: nowrap; border-collapse: collapse;"><div class="rpt-sort"><a  href="f?p=340:2:1191477976891101:fsp_sort_10::RP&amp;fsp_region_id=193752150861201154"  title="Sort by this column">Action Taken</a></div></th><th class="ui-state-default ui-grid-header"  id="DATE_ISSUED_DENIED" style="white-space: nowrap; border-collapse: collapse;"><div class="rpt-sort"><a  href="f?p=340:2:1191477976891101:fsp_sort_11::RP&amp;fsp_region_id=193752150861201154"  title="Sort by this column">Date Issued\Denied</a></div></th><th class="ui-state-default ui-grid-header"  id="MAP" style="white-space: nowrap; border-collapse: collapse;">Map</th></tr></tr>
+<tbody>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Alaska</td><td  headers="DA Number">POA-2011-00976</td><td  headers="Applicant">Phil Duffy-Iqurmiut Traditional Council</td><td  headers="Project Name">Iqurmiut Traditional Council, Yukon River, Extraction of fill from Circle Island Material site</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">28-OCT-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">31-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4689789"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Jacksonville</td><td  headers="DA Number">SAJ-2011-02799</td><td  headers="Applicant">John Wilson</td><td  headers="Project Name">Wilson, John/Fill in boat slip, install seawall</td><td  headers="Permit Type">Letter of Permission</td><td  headers="Public Notice Date">28-OCT-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">04-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4690379"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Jacksonville</td><td  headers="DA Number">SAJ-2011-02685</td><td  headers="Applicant">Brent Setchell-FDOT District 1</td><td  headers="Project Name">FDOT District 1 US 98 from North of CR 540A to SR 540</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">28-SEP-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">11-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4687913"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">New Orleans</td><td  headers="DA Number">MVN-2011-02099-WOO</td><td  headers="Applicant">James Mistretta-Diamond Development, Inc.</td><td  headers="Project Name">Diamond Development - Riverside Resort Blkhd & Timber Wharf on Calcasieu River - Calcasieu</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">29-AUG-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">06-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4681320"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Detroit</td><td  headers="DA Number">LRE-2000-560441</td><td  headers="Applicant">Cal Little-Leland Township, Fred Shoaff, Harry Larkin-Leland Township</td><td  headers="Project Name">Leland Township - Dredging, Shoreline Nourishment</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">29-NOV-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">30-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:1422360"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Jacksonville</td><td  headers="DA Number">SAJ-2007-04955</td><td  headers="Applicant">David Bumbaugh, Jim Helbig</td><td  headers="Project Name">Bumbaugh, David/ dock extension</td><td  headers="Permit Type">Letter of Permission</td><td  headers="Public Notice Date">29-NOV-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">24-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:3714623"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Portland</td><td  headers="DA Number">NWP-2009-00510</td><td  headers="Applicant">John Wilson</td><td  headers="Project Name">MR.  JOHN WILSON</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">29-OCT-2009</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">30-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4525494"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Louisville</td><td  headers="DA Number">LRL-2009-01272-GJD</td><td  headers="Applicant">David  Webb-Patriot Coal Corporation</td><td  headers="Project Name">Patriot Coal Corporation -  KDMP Permit No. 851-0042</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">29-SEP-2010</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">23-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4546098"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Sacramento</td><td  headers="DA Number">SPK-2005-75106-DC</td><td  headers="Applicant">David Mitchem-Town of Pagosa Springs</td><td  headers="Project Name">In-stream habitat and recreation structures for the Town of Pagosa Springs</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">29-SEP-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">10-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:3685508"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Wilmington</td><td  headers="DA Number">SAW-2011-01747</td><td  headers="Applicant">John Lang-U.S. Coast Gaurd, Civil Engineering Unit Cleveland, Raymond Pipak-USCG</td><td  headers="Project Name">Walter Slough/USCG/Dare</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">29-SEP-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">24-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4689979"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">New Orleans</td><td  headers="DA Number">MVN-1997-00150</td><td  headers="Applicant">Brian Babin-Louisiana Department of Natural Resources, Coastal Engineering Division</td><td  headers="Project Name">BRADY CANAL HYDROLOGIC RESTORATION PTE 2</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">30-MAY-2011</td><td  headers="Action Taken">Issued Without Special Conditions</td><td  headers="Date Issued\Denied">17-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:3453266"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Jacksonville</td><td  headers="DA Number">SAJ-2001-01531</td><td  headers="Applicant">KEVIN KENNEY</td><td  headers="Project Name">KENNEY, KEVIN</td><td  headers="Permit Type">Letter of Permission</td><td  headers="Public Notice Date">30-NOV-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">24-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:274284"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Norfolk</td><td  headers="DA Number">NAO-2011-00238-rhs</td><td  headers="Applicant">Mark Simms-Toll Brothers Inc.</td><td  headers="Project Name">Lenah Mill (aka Willowsford Grove)</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">30-NOV-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">12-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4642634"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Charleston</td><td  headers="DA Number">SAC-2011-00479</td><td  headers="Applicant">Patricia Bessinger</td><td  headers="Project Name">Patricia Bessinger / Maintenance Excavation Channel 6</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">31-AUG-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">17-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4658123"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Charleston</td><td  headers="DA Number">SAC-2002-12750</td><td  headers="Applicant">LINDA TUCKER CITY OF ISLE OF PALMS</td><td  headers="Project Name">MORGAN CREEK HARBOR MAINTENANCE DREDGING</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">31-AUG-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">12-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:77271"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Nashville</td><td  headers="DA Number">LRN-2006-02547</td><td  headers="Applicant">Ming Enterprises LLC</td><td  headers="Project Name">Ming Enterprises LLC - Wetland Impacts</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">31-AUG-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">30-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:1595577"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">New Orleans</td><td  headers="DA Number">MVN-2011-02690-EOO</td><td  headers="Applicant">Eland/Sundown Energy</td><td  headers="Project Name">Eland / Sundown Energy - Barge Dock at Miss R 40.5 LDB (MR55) - Plaquemines</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">31-OCT-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">25-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4694436"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">New Orleans</td><td  headers="DA Number">MVN-2010-00680-WY</td><td  headers="Applicant">Hollygrove, LLC</td><td  headers="Project Name">HOLLYGROVE, L.L.C. - dredge a slip off GIWW - Terrebonne</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">31-OCT-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">18-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4576707"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">New Orleans</td><td  headers="DA Number">MVN-2003-03447</td><td  headers="Applicant">Louisiana Department of Wildlife & Fisheries, Artificial Reef Program, Louisiana Department of Wildlife and Fisheries</td><td  headers="Project Name">LDWF ARTIFICIAL REEF CREATION UTILIZING</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">31-OCT-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">04-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:3414171"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Rock Island</td><td  headers="DA Number">MVR-2011-01057-MDH</td><td  headers="Applicant">Raymond McCleary-Des Moines Water Works</td><td  headers="Project Name">DES MOINES WATER WORKS</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">31-OCT-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">03-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4681300"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Seattle</td><td  headers="DA Number">NWS-2011-00495</td><td  headers="Applicant">Kyle Griffith-Miners Landing</td><td  headers="Project Name">Miners Landing - Pier 57 (Ferris wheel)</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">31-OCT-2011</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">11-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4664530"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Alaska</td><td  headers="DA Number">POA-2011-01154</td><td  headers="Applicant">Ken Roberts</td><td  headers="Project Name">Ken Roberts, Port St. Nicholas, Construct pier, ramp, and floating dock </td><td  headers="Permit Type">Letter of Permission</td><td  headers="Public Notice Date">N/A</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">20-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4703767"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Buffalo</td><td  headers="DA Number">LRB-2011-00255</td><td  headers="Applicant">Daniel and Candy Lloyd</td><td  headers="Project Name">Lloyd, Daniel</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">N/A</td><td  headers="Action Taken">Denied Without Prejudice</td><td  headers="Date Issued\Denied">24-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4644154"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Buffalo</td><td  headers="DA Number">LRB-2011-01325</td><td  headers="Applicant">Mark Drinkwater</td><td  headers="Project Name">Drinkwater, Mark</td><td  headers="Permit Type">Letter of Permission</td><td  headers="Public Notice Date">N/A</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">05-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4693184"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Buffalo</td><td  headers="DA Number">LRB-2009-00436</td><td  headers="Applicant">Tim Wagoner-Wagoners Marina</td><td  headers="Project Name">Wagoner's Marina </td><td  headers="Permit Type">Letter of Permission</td><td  headers="Public Notice Date">N/A</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">05-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4401406"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Buffalo</td><td  headers="DA Number">LRB-2011-01219</td><td  headers="Applicant">Atlantis Island, LLC</td><td  headers="Project Name">Atlantis Island LLC</td><td  headers="Permit Type">Letter of Permission</td><td  headers="Public Notice Date">N/A</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">03-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4687882"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Detroit</td><td  headers="DA Number">LRE-2001-162820</td><td  headers="Applicant">Marcia Tiesinga-Joan Vandenbosch</td><td  headers="Project Name">TIESINGA, MARCIA - Dredge, Riprap, Pier, Toe Stone</td><td  headers="Permit Type">Letter of Permission</td><td  headers="Public Notice Date">N/A</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">31-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:2059080"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Detroit</td><td  headers="DA Number">LRE-2011-00604-38</td><td  headers="Applicant">Jack Hubbard-Burt Township</td><td  headers="Project Name">Breakwater Grand Marais Harbor</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">N/A</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">18-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4684872"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Detroit</td><td  headers="DA Number">LRE-1998-560662- </td><td  headers="Applicant">Mark & Amanda Bosco</td><td  headers="Project Name">Bosco Marina</td><td  headers="Permit Type">Standard Permit</td><td  headers="Public Notice Date">N/A</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">12-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:1422062"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+<tr class="ui-widget-content jqgrow ui-row-ltr"><td  headers="District">Fort Worth</td><td  headers="DA Number">SWF-2011-00598</td><td  headers="Applicant"> - </td><td  headers="Project Name">UNAUTHORIZED ACTIVITY - Buchholz Dredging</td><td  headers="Permit Type">Letter of Permission</td><td  headers="Public Notice Date">N/A</td><td  headers="Action Taken">Issued With Special Conditions</td><td  headers="Date Issued\Denied">23-JAN-2012</td><td  align="center"  headers="Map"><a href = "f?p=340:7:1191477976891101::NO::P7_PROJECT_ID:4704794"><img src = "wwv_flow_file_mgr.get_file?p_security_group_id=1211711255363293&p_fname=map_icon.gif" border="0" alt="View on Map"></a></td></tr>
+</tbody>
+</table><div class=""><a href="f?p=340:2:1191477976891101:FLOW_EXCEL_OUTPUT_R193752150861201154_en" ><BR>Export List</a></div><table style="width: 1%; white-space: nowrap; float: right;"><tr><td colspan="14" align="right" ><table summary=""><tr><td class="pagination"></td><td class="pagination"><a href="f?p=340:2:1191477976891101:pg_R_193752150861201154:NO&amp;pg_min_row=121&amp;pg_max_rows=30&amp;pg_rows_fetched=30" class="">&lt;Previous</a></td><td nowrap="nowrap" class="pagination"><span class="instructiontext"><label for="X01_193752150861201154" class="hideMeButHearMe">Select Pagination</label><select name="X01" size="1"  onchange="javascript:redirect('f?p=340:2:1191477976891101:pg_R_193752150861201154:NO&amp;pg_min_row='+this.options[selectedIndex].value+'&amp;pg_rows_fetched=30')" id="X01_193752150861201154"><option value="1&amp;pg_max_rows=30">1 - 30 of 268</option><option value="31&amp;pg_max_rows=30">31 - 60 of 268</option><option value="61&amp;pg_max_rows=30">61 - 90 of 268</option><option value="91&amp;pg_max_rows=30">91 - 120 of 268</option><option value="121&amp;pg_max_rows=30">121 - 150 of 268</option><option value="current" selected="selected">row(s) 151 - 180 of 268</option><option value="181&amp;pg_max_rows=30">181 - 210 of 268</option><option value="211&amp;pg_max_rows=30">211 - 240 of 268</option><option value="241&amp;pg_max_rows=30">241 - 268 of 268</option></select></span></td><td class="pagination"><a href="f?p=340:2:1191477976891101:pg_R_193752150861201154:NO&amp;pg_min_row=181&amp;pg_max_rows=30&amp;pg_rows_fetched=30" class="">Next &gt;</a></td><td class="pagination"></td></tr></table></td></tr></table></div>
+<script>$('#'+'report_R193752150861201154').fadeTo(250,0.8);</script></div>
+    <div class="buttons" id="R193752150861201154Buttons" ></div>
+  </div>
+</div>
+      					
+      					
+      					
+      				</div>
+				</div>
+			</div>
+		</div>	<input type="hidden" name="p_md5_checksum" value=""  /><input type="hidden" name="p_page_checksum" value="4012C10DBAA23C2B13629D81E4E9577D"  /></form> 
+	<div id="pageInfo">Page #: 340:2</div>
+	
+	<script type="text/javascript">
+<!-- 
+apex.jQuery(document).ready(function(){
+(function(){apex.widget.selectList("#P0_ORG",{"ajaxIdentifier":"962B81215EAFBBEB41A6BC1245A50C146967AE5F5D519577E2DDCDBAB1496721","nullValue":"2"});})();
+(function(){apex.widget.selectList("#P0_YEAR",{"ajaxIdentifier":"4593A8599723CCC2DF6321350A807B5AF201B99DDC63D61AF73467BFD36A2D7F","nullValue":""});})();
+(function(){apex.widget.selectList("#P0_MONTH",{"ajaxIdentifier":"4593A8599723CCC2DF6321350A807B5A6480791C9E9D7C9B13A1A3BB56BD7D1E","nullValue":""});})();
+(function(){
+    initReport('R193752150861201154','193752150861201154','','#dddddd',null);
+})();
+first_field('P0_ORG');
+});
+//-->
+</script></body>
+		<!-- 
+			Crystal Icons by Everaldo.com Copyright (C) 2004-2011
+			http://www.everaldo.com/crystal/?action=license
+			
+			Crystal Clear (crystal_clear)
+			link: http://commons.wikimedia.org/wiki/Crystal_Clear
+			license: LGPL-2.1
+			license link: http://creativecommons.org/licenses/LGPL/2.1/
+			formats: png
+			subdirectories:	&ICONSDIR.crystal_clear/<all directories under here>
+			
+			This library is free software; you can redistribute it and/or modify it under the terms of the GNU 
+			Lesser General Public License as published by the Free Software Foundation; either version 2.1 of 
+			the License, or (at your option) any later version.
+
+			This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without 
+			even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser 
+			General Public License for more details.
+
+			You should have received a copy of the GNU Lesser General Public License along with this library; 
+			if not, write to the 
+			Free Software Foundation, Inc.,
+			59 Temple Place, Suite 330
+			Boston, MA 02111-1307 USA 
+		 -->
+</html>
